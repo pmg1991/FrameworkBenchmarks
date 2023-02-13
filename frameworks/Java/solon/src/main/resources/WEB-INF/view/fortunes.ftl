@@ -9,12 +9,12 @@
         <th>id</th>
         <th>message</th>
     </tr>
-    {{#fortunes}}
+    <#list fortunes as item>
     <tr>
-        <td>{{id}}</td>
-        <td>{{message}}</td>
+        <td>${item.id}</td>
+        <td>${item.message}</td>
     </tr>
-    {{/fortunes}}
+    </#list>
 </table>
 </body>
 </html>
