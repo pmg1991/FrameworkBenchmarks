@@ -17,12 +17,18 @@
     <dependencies>
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon.boot.smarthttp</artifactId>
+            <artifactId>solon-web</artifactId>
             <version>${solon.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.noear</groupId>
+                    <artifactId>solon.boot.jlhttp</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.noear</groupId>
-            <artifactId>solon.serialization.snack3</artifactId>
+            <artifactId>solon.boot.smarthttp</artifactId>
             <version>${solon.version}</version>
         </dependency>
     </dependencies>
